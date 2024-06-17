@@ -1,0 +1,91 @@
+2024-05-28 18:15:02,461 Exception on /register [POST] [in /home/mokeira/.local/lib/python3.8/site-packages/flask/app.py:828]
+Traceback (most recent call last):
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_12_error_handling _assesment/app/routes.py", line 92, in register
+    if form.validate_on_submit():
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/wtforms/form.py", line 329, in validate
+    return super().validate(extra)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/wtforms/form.py", line 146, in validate
+    if not field.validate(self, extra):
+  File "/home/mokeira/.local/lib/python3.8/site-packages/wtforms/fields/core.py", line 246, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/wtforms/fields/core.py", line 266, in _run_validation_chain
+    validator(form, self)
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_12_error_handling _assesment/app/forms.py", line 35, in validate_username
+    user = user.query.filter_by(username=username.data).first()
+UnboundLocalError: local variable 'user' referenced before assignment
+2024-05-28 18:15:33,019 Exception on /register [POST] [in /home/mokeira/.local/lib/python3.8/site-packages/flask/app.py:828]
+Traceback (most recent call last):
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_12_error_handling _assesment/app/routes.py", line 92, in register
+    if form.validate_on_submit():
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask_wtf/form.py", line 86, in validate_on_submit
+    return self.is_submitted() and self.validate(extra_validators=extra_validators)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/wtforms/form.py", line 329, in validate
+    return super().validate(extra)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/wtforms/form.py", line 146, in validate
+    if not field.validate(self, extra):
+  File "/home/mokeira/.local/lib/python3.8/site-packages/wtforms/fields/core.py", line 246, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/wtforms/fields/core.py", line 266, in _run_validation_chain
+    validator(form, self)
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_12_error_handling _assesment/app/forms.py", line 35, in validate_username
+    user = user.query.filter_by(username=username.data).first()
+UnboundLocalError: local variable 'user' referenced before assignment
+2024-05-28 18:16:19,168 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_12_error_handling _assesment/app/__init__.py:49]
+2024-05-28 18:16:24,386 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_12_error_handling _assesment/app/__init__.py:49]
+2024-05-28 18:18:24,560 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_12_error_handling _assesment/app/__init__.py:49]
+2024-05-28 18:18:40,824 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_12_error_handling _assesment/app/__init__.py:49]
+2024-05-28 18:19:09,414 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_12_error_handling _assesment/app/__init__.py:49]
+2024-05-29 20:55:41,646 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-05-29 20:55:45,197 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 11:40:05,163 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 11:40:15,638 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 11:51:02,572 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 11:51:21,660 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 11:54:52,792 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 11:59:59,866 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:00:33,079 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:00:59,023 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:10:19,737 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:10:29,409 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:21:28,487 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:31:06,658 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:31:29,363 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:31:38,137 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:31:49,743 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:32:03,782 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:32:26,987 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:32:42,606 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:32:53,170 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:33:12,079 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:33:29,627 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:33:45,966 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:33:59,083 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:34:11,783 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:34:22,754 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:34:36,371 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:35:01,228 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:35:11,497 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:35:32,309 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:35:54,337 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:36:16,693 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:36:50,431 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:41:29,468 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]
+2024-06-01 12:49:26,300 Tinker Full-Stack App [in /mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/__init__.py:49]

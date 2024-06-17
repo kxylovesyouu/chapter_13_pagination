@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+    <p>
+     
+    </p>
+  </div>
+</div>
+
+  </form>
+</div>
+<hr>
+<h2>All Messages</h2>
+<div class="col-md-4">
+  <form action="" method="post" novalidate>
+      {{ form.hidden_tag() }}
+      
+      <p>
+        <p> Hi There {{ current_user.username}}. Make A Post Now</p>
+          {{ form.body.label }} <br>
+          {{ form.body(cols=50, rows=4)}}<br>
+          {% for error in form.body.errors %}
+          <span style="color: red;">
+              {{ error }}
+          </span>
+          {% endfor %}
+
+      </p>
+     
+  
+      
+      <p>
+          {{ form.submit() }}
+      </p>
+  </form>
+    
+</div>
+<div class="row">
+  <div class="col-md-12">
+    {% for post in posts %}
+      {% if post %}
+        {% include '_post.html' %}
+      {% endif %}
+    {% endfor %}
+
+   
+  </div>
+  <div class="row">
+    <div class="col-md-12 text-start" >
+       <!--Pagination-->
+      {% if prev_url %}
+        <a href="{{ prev_url }}">Newer Posts</a>
+      {% endif %}
+      {% if next_url %}
+        <a href="{{ next_url }}">Older Posts</a>
+      {% endif %}
+    </div>
+  </div>
+ </div>
+   
+{% endblock %} 

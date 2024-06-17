@@ -1,0 +1,124 @@
+2024-06-08 12:31:40,597 Exception on /maya/profile [GET] [in /home/mokeira/.local/lib/python3.8/site-packages/flask/app.py:828]
+Traceback (most recent call last):
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/routes.py", line 71, in profile
+    error_out=False)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/templates/profile.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/templates/base.html", line 68, in top-level template code
+    {% block content %}
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/templates/profile.html", line 43, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/mokeira/.local/lib/python3.8/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2024-06-08 13:08:39,439 Exception on /maya/profile [GET] [in /home/mokeira/.local/lib/python3.8/site-packages/flask/app.py:828]
+Traceback (most recent call last):
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/routes.py", line 71, in profile
+    error_out=False)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/templates/profile.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/templates/base.html", line 68, in top-level template code
+    {% block content %}
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/templates/profile.html", line 43, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/mokeira/.local/lib/python3.8/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2024-06-08 13:09:44,630 Exception on /maya/profile [GET] [in /home/mokeira/.local/lib/python3.8/site-packages/flask/app.py:828]
+Traceback (most recent call last):
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/routes.py", line 71, in profile
+    error_out=False)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/templates/profile.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/templates/base.html", line 68, in top-level template code
+    {% block content %}
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/templates/profile.html", line 43, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/home/mokeira/.local/lib/python3.8/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2024-06-08 13:14:54,914 Exception on /maya/profile [GET] [in /home/mokeira/.local/lib/python3.8/site-packages/flask/app.py:828]
+Traceback (most recent call last):
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/routes.py", line 71, in profile
+    error_out=False)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/mokeira/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/mokeira/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/templates/profile.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/templates/base.html", line 68, in top-level template code
+    {% block content %}
+  File "/mnt/c/Users/user/Desktop/Folders/software_development/chapter_13_pagination/app/templates/profile.html", line 43, in block 'content'
+    { %for post in posts %}
+  File "/home/mokeira/.local/lib/python3.8/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
